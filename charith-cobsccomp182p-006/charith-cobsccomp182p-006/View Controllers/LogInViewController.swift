@@ -14,13 +14,23 @@ class LogInViewController: UIViewController {
     @IBOutlet weak var passwordTxt: UITextField!
     @IBOutlet weak var logInBtn: UIButton!
     @IBOutlet weak var errorLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setUpElements()
     }
     
-
+    func setUpElements(){
+        
+        errorLbl.alpha = 0
+        
+        Utilities.styleTextField(emailTxt)
+        Utilities.styleTextField(passwordTxt)
+        Utilities.styleFilledButton(logInBtn)
+        
+    }
     /*
     // MARK: - Navigation
 
@@ -33,5 +43,6 @@ class LogInViewController: UIViewController {
 
     @IBAction func loginTapped(_ sender: Any) {
     }
+    
     
 }

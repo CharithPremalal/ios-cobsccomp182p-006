@@ -18,6 +18,7 @@
 		29CA1F6D23FD80CD00CDBED7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F6C23FD80CD00CDBED7 /* SignUpViewController.swift */; };
 		29CA1F6F23FD80F500CDBED7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */; };
 		29CA1F7123FD810300CDBED7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F7023FD810300CDBED7 /* HomeViewController.swift */; };
+		29CA1F7423FEC60800CDBED7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F7323FEC60800CDBED7 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		29CA1F6C23FD80CD00CDBED7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		29CA1F7023FD810300CDBED7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		29CA1F7323FEC60800CDBED7 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		2998632023F3C53E005E1F3E /* charith-cobsccomp182p-006 */ = {
 			isa = PBXGroup;
 			children = (
+				29CA1F7523FEC63A00CDBED7 /* Assets */,
 				29CA1F7223FD811C00CDBED7 /* View Controllers */,
 				2998632123F3C53E005E1F3E /* AppDelegate.swift */,
 				2998632523F3C53E005E1F3E /* Main.storyboard */,
@@ -143,6 +146,14 @@
 				2998632323F3C53E005E1F3E /* ViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		29CA1F7523FEC63A00CDBED7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				29CA1F7323FEC60800CDBED7 /* Utilities.swift */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			files = (
 				2998632423F3C53E005E1F3E /* ViewController.swift in Sources */,
 				2998632A23F3C53E005E1F3E /* charith_cobsccomp182p_006.xcdatamodeld in Sources */,
+				29CA1F7423FEC60800CDBED7 /* Utilities.swift in Sources */,
 				29CA1F6D23FD80CD00CDBED7 /* SignUpViewController.swift in Sources */,
 				29CA1F6F23FD80F500CDBED7 /* LogInViewController.swift in Sources */,
 				2998632223F3C53E005E1F3E /* AppDelegate.swift in Sources */,
