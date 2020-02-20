@@ -10,6 +10,17 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    
+    @IBOutlet weak var firstNameTxt: UITextField!
+    @IBOutlet weak var lastNameTxt: UITextField!
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
+    @IBOutlet weak var confirmPasswordTxt: UITextField!
+    
+    @IBOutlet weak var signUpBtn: UIButton!
+    
+    @IBOutlet weak var errorLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +38,9 @@ class SignUpViewController: UIViewController {
     }
     */
 
+    
+    @IBAction func signUpTapped(_ sender: Any) {
+        
+    }
+    
 }

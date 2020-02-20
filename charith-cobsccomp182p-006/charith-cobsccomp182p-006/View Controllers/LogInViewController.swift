@@ -10,6 +10,10 @@ import UIKit
 
 class LogInViewController: UIViewController {
 
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var passwordTxt: UITextField!
+    @IBOutlet weak var logInBtn: UIButton!
+    @IBOutlet weak var errorLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +31,7 @@ class LogInViewController: UIViewController {
     }
     */
 
+    @IBAction func loginTapped(_ sender: Any) {
+    }
+    
 }
