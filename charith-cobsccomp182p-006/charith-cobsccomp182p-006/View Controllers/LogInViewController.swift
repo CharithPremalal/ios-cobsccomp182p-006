@@ -65,7 +65,7 @@ class LogInViewController: UIViewController {
                 self.errorLbl.alpha = 1
             }
             else{
-                let homeViewContoller = self.storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.homeViewController) as? HomeViewController
+                let homeViewContoller = self.storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.homeViewController) as? UITabBarController
                 
                 self.view.window?.rootViewController = homeViewContoller
                 self.view.window?.makeKeyAndVisible()
@@ -74,5 +74,9 @@ class LogInViewController: UIViewController {
         }
     }
     
+    func showError(_ message:String){
+        errorLbl.text = message
+        errorLbl.alpha = 1
+    }
     
 }

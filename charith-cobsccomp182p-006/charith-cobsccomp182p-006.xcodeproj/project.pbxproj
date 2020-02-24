@@ -16,9 +16,9 @@
 		2998633A23F3C540005E1F3E /* charith_cobsccomp182p_006Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998633923F3C540005E1F3E /* charith_cobsccomp182p_006Tests.swift */; };
 		2998634523F3C540005E1F3E /* charith_cobsccomp182p_006UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998634423F3C540005E1F3E /* charith_cobsccomp182p_006UITests.swift */; };
 		29BE479B2403A366008B2AEE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BE479A2403A366008B2AEE /* Constants.swift */; };
+		29BE479D24041EAB008B2AEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BE479C24041EAB008B2AEE /* HomeViewController.swift */; };
 		29CA1F6D23FD80CD00CDBED7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F6C23FD80CD00CDBED7 /* SignUpViewController.swift */; };
 		29CA1F6F23FD80F500CDBED7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */; };
-		29CA1F7123FD810300CDBED7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F7023FD810300CDBED7 /* HomeViewController.swift */; };
 		29CA1F7423FEC60800CDBED7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F7323FEC60800CDBED7 /* Utilities.swift */; };
 		29EB9F7D2402C18E008EEEB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29EB9F7C2402C18E008EEEB8 /* GoogleService-Info.plist */; };
 		70041EEF5A6F9F279F15BCFA /* Pods_charith_cobsccomp182p_006Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9DE8C21D471C105AE52918 /* Pods_charith_cobsccomp182p_006Tests.framework */; };
@@ -60,9 +60,9 @@
 		2998634423F3C540005E1F3E /* charith_cobsccomp182p_006UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = charith_cobsccomp182p_006UITests.swift; sourceTree = "<group>"; };
 		2998634623F3C540005E1F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29BE479A2403A366008B2AEE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		29BE479C24041EAB008B2AEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		29CA1F6C23FD80CD00CDBED7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		29CA1F7023FD810300CDBED7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		29CA1F7323FEC60800CDBED7 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		29EB9F7C2402C18E008EEEB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		827EF89BEAFADF21F47C1129 /* Pods-charith-cobsccomp182p-006Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charith-cobsccomp182p-006Tests.release.xcconfig"; path = "Target Support Files/Pods-charith-cobsccomp182p-006Tests/Pods-charith-cobsccomp182p-006Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 			children = (
 				29CA1F6C23FD80CD00CDBED7 /* SignUpViewController.swift */,
 				29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */,
-				29CA1F7023FD810300CDBED7 /* HomeViewController.swift */,
+				29BE479C24041EAB008B2AEE /* HomeViewController.swift */,
 				2998632323F3C53E005E1F3E /* ViewController.swift */,
 			);
 			path = "View Controllers";
@@ -445,10 +445,10 @@
 				2998632423F3C53E005E1F3E /* ViewController.swift in Sources */,
 				2998632A23F3C53E005E1F3E /* charith_cobsccomp182p_006.xcdatamodeld in Sources */,
 				29CA1F7423FEC60800CDBED7 /* Utilities.swift in Sources */,
+				29BE479D24041EAB008B2AEE /* HomeViewController.swift in Sources */,
 				29CA1F6D23FD80CD00CDBED7 /* SignUpViewController.swift in Sources */,
 				29CA1F6F23FD80F500CDBED7 /* LogInViewController.swift in Sources */,
 				2998632223F3C53E005E1F3E /* AppDelegate.swift in Sources */,
-				29CA1F7123FD810300CDBED7 /* HomeViewController.swift in Sources */,
 				29BE479B2403A366008B2AEE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
