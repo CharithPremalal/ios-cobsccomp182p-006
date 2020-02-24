@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		2998632F23F3C540005E1F3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2998632D23F3C540005E1F3E /* LaunchScreen.storyboard */; };
 		2998633A23F3C540005E1F3E /* charith_cobsccomp182p_006Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998633923F3C540005E1F3E /* charith_cobsccomp182p_006Tests.swift */; };
 		2998634523F3C540005E1F3E /* charith_cobsccomp182p_006UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998634423F3C540005E1F3E /* charith_cobsccomp182p_006UITests.swift */; };
+		29BE479B2403A366008B2AEE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BE479A2403A366008B2AEE /* Constants.swift */; };
 		29CA1F6D23FD80CD00CDBED7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F6C23FD80CD00CDBED7 /* SignUpViewController.swift */; };
 		29CA1F6F23FD80F500CDBED7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */; };
 		29CA1F7123FD810300CDBED7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F7023FD810300CDBED7 /* HomeViewController.swift */; };
@@ -58,6 +59,7 @@
 		2998634023F3C540005E1F3E /* charith-cobsccomp182p-006UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "charith-cobsccomp182p-006UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2998634423F3C540005E1F3E /* charith_cobsccomp182p_006UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = charith_cobsccomp182p_006UITests.swift; sourceTree = "<group>"; };
 		2998634623F3C540005E1F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29BE479A2403A366008B2AEE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		29CA1F6C23FD80CD00CDBED7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		29CA1F7023FD810300CDBED7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				29CA1F7323FEC60800CDBED7 /* Utilities.swift */,
+				29BE479A2403A366008B2AEE /* Constants.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -186,7 +189,6 @@
 				E004DD9CF30D0139624572AC /* Pods-charith-cobsccomp182p-006Tests.debug.xcconfig */,
 				827EF89BEAFADF21F47C1129 /* Pods-charith-cobsccomp182p-006Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -447,6 +449,7 @@
 				29CA1F6F23FD80F500CDBED7 /* LogInViewController.swift in Sources */,
 				2998632223F3C53E005E1F3E /* AppDelegate.swift in Sources */,
 				29CA1F7123FD810300CDBED7 /* HomeViewController.swift in Sources */,
+				29BE479B2403A366008B2AEE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

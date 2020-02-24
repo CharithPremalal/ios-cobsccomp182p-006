@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class LogInViewController: UIViewController {
 
@@ -31,17 +32,46 @@ class LogInViewController: UIViewController {
         Utilities.styleFilledButton(logInBtn)
         
     }
-    /*
-    // MARK: - Navigation
+    
+    func validateFields() -> String? {
+        
+        if  emailTxt.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordTxt.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
+        {
+            return "Please fill in all fields"
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        return nil
     }
-    */
-
+    
     @IBAction func loginTapped(_ sender: Any) {
+        //Validation
+        let error = validateFields()
+        
+        if error != nil {
+            showError(error!)
+        }
+        else {
+        
+        //
+        let email=emailTxt.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password=passwordTxt.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        //Signin
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            
+            if error != nil{
+                self.errorLbl.text = error!.localizedDescription
+                self.errorLbl.alpha = 1
+            }
+            else{
+                let homeViewContoller = self.storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.homeViewController) as? HomeViewController
+                
+                self.view.window?.rootViewController = homeViewContoller
+                self.view.window?.makeKeyAndVisible()
+                }
+            }
+        }
     }
     
     
