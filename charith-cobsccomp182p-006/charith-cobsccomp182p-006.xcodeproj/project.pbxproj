@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		291DA61A240592FD003CCE52 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291DA619240592FD003CCE52 /* ProfileViewController.swift */; };
 		2998632223F3C53E005E1F3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998632123F3C53E005E1F3E /* AppDelegate.swift */; };
 		2998632423F3C53E005E1F3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998632323F3C53E005E1F3E /* ViewController.swift */; };
 		2998632723F3C53E005E1F3E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2998632523F3C53E005E1F3E /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		016FDB0505DB4FE74AFF164C /* Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.release.xcconfig"; path = "Target Support Files/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.release.xcconfig"; sourceTree = "<group>"; };
+		291DA619240592FD003CCE52 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2998631E23F3C53E005E1F3E /* charith-cobsccomp182p-006.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "charith-cobsccomp182p-006.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2998632123F3C53E005E1F3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2998632323F3C53E005E1F3E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				29CA1F6C23FD80CD00CDBED7 /* SignUpViewController.swift */,
 				29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */,
 				29BE47A02404484F008B2AEE /* ResetViewController.swift */,
+				291DA619240592FD003CCE52 /* ProfileViewController.swift */,
 				29BE479C24041EAB008B2AEE /* HomeViewController.swift */,
 				2998632323F3C53E005E1F3E /* ViewController.swift */,
 			);
@@ -447,6 +450,7 @@
 			files = (
 				2998632423F3C53E005E1F3E /* ViewController.swift in Sources */,
 				29BE47A12404484F008B2AEE /* ResetViewController.swift in Sources */,
+				291DA61A240592FD003CCE52 /* ProfileViewController.swift in Sources */,
 				2998632A23F3C53E005E1F3E /* charith_cobsccomp182p_006.xcdatamodeld in Sources */,
 				29CA1F7423FEC60800CDBED7 /* Utilities.swift in Sources */,
 				29BE479D24041EAB008B2AEE /* HomeViewController.swift in Sources */,
