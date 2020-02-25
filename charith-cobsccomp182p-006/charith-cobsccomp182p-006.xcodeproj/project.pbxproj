@@ -17,6 +17,7 @@
 		2998634523F3C540005E1F3E /* charith_cobsccomp182p_006UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998634423F3C540005E1F3E /* charith_cobsccomp182p_006UITests.swift */; };
 		29BE479B2403A366008B2AEE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BE479A2403A366008B2AEE /* Constants.swift */; };
 		29BE479D24041EAB008B2AEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BE479C24041EAB008B2AEE /* HomeViewController.swift */; };
+		29BE47A12404484F008B2AEE /* ResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BE47A02404484F008B2AEE /* ResetViewController.swift */; };
 		29CA1F6D23FD80CD00CDBED7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F6C23FD80CD00CDBED7 /* SignUpViewController.swift */; };
 		29CA1F6F23FD80F500CDBED7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */; };
 		29CA1F7423FEC60800CDBED7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F7323FEC60800CDBED7 /* Utilities.swift */; };
@@ -61,6 +62,7 @@
 		2998634623F3C540005E1F3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29BE479A2403A366008B2AEE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		29BE479C24041EAB008B2AEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		29BE47A02404484F008B2AEE /* ResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetViewController.swift; sourceTree = "<group>"; };
 		29CA1F6C23FD80CD00CDBED7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		29CA1F7323FEC60800CDBED7 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				29CA1F6C23FD80CD00CDBED7 /* SignUpViewController.swift */,
 				29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */,
+				29BE47A02404484F008B2AEE /* ResetViewController.swift */,
 				29BE479C24041EAB008B2AEE /* HomeViewController.swift */,
 				2998632323F3C53E005E1F3E /* ViewController.swift */,
 			);
@@ -443,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2998632423F3C53E005E1F3E /* ViewController.swift in Sources */,
+				29BE47A12404484F008B2AEE /* ResetViewController.swift in Sources */,
 				2998632A23F3C53E005E1F3E /* charith_cobsccomp182p_006.xcdatamodeld in Sources */,
 				29CA1F7423FEC60800CDBED7 /* Utilities.swift in Sources */,
 				29BE479D24041EAB008B2AEE /* HomeViewController.swift in Sources */,

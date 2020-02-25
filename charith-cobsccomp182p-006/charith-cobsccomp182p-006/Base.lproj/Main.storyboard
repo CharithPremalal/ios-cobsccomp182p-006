@@ -117,10 +117,10 @@
             </objects>
             <point key="canvasLocation" x="1254" y="1132"/>
         </scene>
-        <!--View Controller-->
+        <!--Reset View Controller-->
         <scene sceneID="edK-IP-D13">
             <objects>
-                <viewController id="Qfe-Fj-NZ6" sceneMemberID="viewController">
+                <viewController id="Qfe-Fj-NZ6" customClass="ResetViewController" customModule="charith_cobsccomp182p_006" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZIk-RL-5sN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,6 +150,7 @@
                                         <state key="normal" title="Reset Password"/>
                                         <connections>
                                             <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ReW-eK-rBh"/>
+                                            <action selector="resetPasswordTapped:" destination="Qfe-Fj-NZ6" eventType="touchUpInside" id="EsB-tY-vsm"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -163,6 +164,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="L95-vb-vWk"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTxt" destination="mew-0f-gqw" id="dgA-9F-YUI"/>
+                        <outlet property="resetBtn" destination="smS-aR-1Nd" id="B6J-80-AGl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qdl-tm-YJ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,7 +321,7 @@
             </objects>
             <point key="canvasLocation" x="2019" y="403"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Event-->
         <scene sceneID="Uzb-gO-AkV">
             <objects>
                 <viewController id="00m-U4-10b" sceneMemberID="viewController">
@@ -326,13 +331,13 @@
                         <color key="backgroundColor" red="0.9212953706" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="3OW-MC-izt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="tMR-nO-Zxb"/>
+                    <tabBarItem key="tabBarItem" title="Add Event" id="tMR-nO-Zxb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WcE-Dz-XeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-200" y="1861"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile-->
         <scene sceneID="uS7-qa-vAP">
             <objects>
                 <viewController id="GWb-Hf-TgE" sceneMemberID="viewController">
@@ -342,13 +347,13 @@
                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="bhP-rB-CAg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="bAd-LZ-QQE"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="bAd-LZ-QQE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tml-HM-mfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="494" y="1861"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="D1W-MZ-Ayb">
             <objects>
                 <viewController id="6Dw-1a-o7z" sceneMemberID="viewController">
@@ -356,26 +361,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hqg-UU-3Ka">
-                                <rect key="frame" x="20" y="71" width="374" height="308"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hqg-UU-3Ka">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aEI-0g-phg" firstAttribute="bottom" secondItem="Hqg-UU-3Ka" secondAttribute="bottom" id="AVa-lS-C8w"/>
+                            <constraint firstItem="Hqg-UU-3Ka" firstAttribute="top" secondItem="aEI-0g-phg" secondAttribute="top" id="TMi-iy-oca"/>
+                            <constraint firstItem="Hqg-UU-3Ka" firstAttribute="leading" secondItem="aEI-0g-phg" secondAttribute="leading" id="kDf-c4-5eI"/>
+                            <constraint firstItem="aEI-0g-phg" firstAttribute="trailing" secondItem="Hqg-UU-3Ka" secondAttribute="trailing" id="m1M-Uv-iTD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aEI-0g-phg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="uVk-5z-k1y"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="uVk-5z-k1y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hdO-ve-jTN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-946.37681159420299" y="1860.9375"/>
         </scene>
-        <!--Home-->
+        <!--Tab Bar Controller-->
         <scene sceneID="5CY-6p-ACZ">
             <objects>
                 <tabBarController storyboardIdentifier="HomeVC" id="UiB-bT-c2M" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Home" id="taM-6l-tF1">
+                    <navigationItem key="navigationItem" id="taM-6l-tF1">
                         <barButtonItem key="leftBarButtonItem" title="Login" style="plain" id="cwc-Nf-47d">
                             <connections>
                                 <segue destination="BYZ-38-t0r" kind="show" id="exo-uX-aFQ"/>

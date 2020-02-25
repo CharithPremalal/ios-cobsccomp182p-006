@@ -21,15 +21,18 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var confirmPasswordTxt: UITextField!
     
     @IBOutlet weak var signUpBtn: UIButton!
-    
     @IBOutlet weak var errorLbl: UILabel!
+    
+    var imagePicker:UIImagePickerController!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setUpElements()
+
     }
+    
     func setUpElements(){
         
         errorLbl.alpha = 0
@@ -121,7 +124,7 @@ class SignUpViewController: UIViewController {
     
     func transitionToHome(){
         
-        let homeViewContoller = storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.homeViewController) as? HomeViewController
+        let homeViewContoller = storyboard?.instantiateViewController(withIdentifier:Constants.Storyboard.homeViewController) as? UITabBarController
         
         view.window?.rootViewController = homeViewContoller
         view.window?.makeKeyAndVisible()
