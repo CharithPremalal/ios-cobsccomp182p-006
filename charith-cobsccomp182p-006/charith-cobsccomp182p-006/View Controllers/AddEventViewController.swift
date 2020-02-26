@@ -1,20 +1,19 @@
 //
-//  ProfileViewController.swift
+//  AddEventViewController.swift
 //  charith-cobsccomp182p-006
 //
-//  Created by Charith Lakshitha on 2/25/20.
+//  Created by Charith Lakshitha on 2/26/20.
 //  Copyright © 2020 Charith Lakshitha. All rights reserved.
 //
 
 import UIKit
 import FirebaseAuth
 
-class ProfileViewController: UIViewController {
+class AddEventViewController: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         checkLoggedInUserStatus()
         
         // Do any additional setup after loading the view.
@@ -31,24 +30,10 @@ class ProfileViewController: UIViewController {
             }
         }else{
             
-          print("user Logged")
+            print("user Logged")
         }
         
     }
     
-    
-    
-    @IBAction func LogoutTapped(_ sender: Any) {
-        do{
-            try Auth.auth().signOut()
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Login")
-            self.present(vc, animated: true, completion: nil)
-            
-        }catch let err{
-            
-            print("Failed to sign out with error",err)
-            
-            
-        }
-    }
+
 }
