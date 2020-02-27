@@ -54,6 +54,7 @@ class SignUpViewController: UIViewController {
         emailTxt.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
         passwordTxt.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
         phoneNumber.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
+            
         {
             return "Please fill in all fields"
         }
@@ -100,7 +101,7 @@ class SignUpViewController: UIViewController {
                 else {
                     let db = Firestore.firestore()
                     
-                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName,
+                    db.collection("users").document(result!.user.uid ).setData(["firstname":firstName, "lastname":lastName,
                     "phone":phone, "uid":result!.user.uid ]) { (error) in
                                                                 
                      if error != nil {

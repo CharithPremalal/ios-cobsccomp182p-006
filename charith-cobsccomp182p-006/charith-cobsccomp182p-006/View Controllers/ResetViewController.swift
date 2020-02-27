@@ -13,7 +13,7 @@ class ResetViewController: UIViewController {
     
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var resetBtn: UIButton!
-    @IBOutlet weak var errorLbl: UILabel!
+  //  @IBOutlet weak var errorLbl: UILabel!
     
 
     override func viewDidLoad() {
@@ -34,10 +34,10 @@ class ResetViewController: UIViewController {
         
     }
     
-    func showError(_ message:String){
+  /*  func showError(_ message:String){
         errorLbl.text = message
         errorLbl.alpha = 1
-    }
+    }*/
     
     
 
