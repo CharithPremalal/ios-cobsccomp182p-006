@@ -25,9 +25,7 @@
 		29CA1F6F23FD80F500CDBED7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */; };
 		29CA1F7423FEC60800CDBED7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CA1F7323FEC60800CDBED7 /* Utilities.swift */; };
 		29EB9F7D2402C18E008EEEB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29EB9F7C2402C18E008EEEB8 /* GoogleService-Info.plist */; };
-		70041EEF5A6F9F279F15BCFA /* Pods_charith_cobsccomp182p_006Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9DE8C21D471C105AE52918 /* Pods_charith_cobsccomp182p_006Tests.framework */; };
 		8699594B02FAA227F6071815 /* Pods_charith_cobsccomp182p_006.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C4B09B7C9016204B2BEFA1 /* Pods_charith_cobsccomp182p_006.framework */; };
-		B71A1CECE3EB32B690D0E1BC /* Pods_charith_cobsccomp182p_006_charith_cobsccomp182p_006UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F24300549BC138B7ECF458F1 /* Pods_charith_cobsccomp182p_006_charith_cobsccomp182p_006UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		016FDB0505DB4FE74AFF164C /* Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.release.xcconfig"; path = "Target Support Files/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.release.xcconfig"; sourceTree = "<group>"; };
 		291DA619240592FD003CCE52 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		291DA61D24062C01003CCE52 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		295F9D8724080BC800CC40F4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -73,14 +70,9 @@
 		29CA1F6E23FD80F500CDBED7 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		29CA1F7323FEC60800CDBED7 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		29EB9F7C2402C18E008EEEB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		827EF89BEAFADF21F47C1129 /* Pods-charith-cobsccomp182p-006Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charith-cobsccomp182p-006Tests.release.xcconfig"; path = "Target Support Files/Pods-charith-cobsccomp182p-006Tests/Pods-charith-cobsccomp182p-006Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B5522FCD3CB90114143F7480 /* Pods-charith-cobsccomp182p-006.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charith-cobsccomp182p-006.debug.xcconfig"; path = "Target Support Files/Pods-charith-cobsccomp182p-006/Pods-charith-cobsccomp182p-006.debug.xcconfig"; sourceTree = "<group>"; };
-		CB9DE8C21D471C105AE52918 /* Pods_charith_cobsccomp182p_006Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_charith_cobsccomp182p_006Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C4B09B7C9016204B2BEFA1 /* Pods_charith_cobsccomp182p_006.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_charith_cobsccomp182p_006.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49B2DB2F4FA1AF1A0F32FE9 /* Pods-charith-cobsccomp182p-006.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charith-cobsccomp182p-006.release.xcconfig"; path = "Target Support Files/Pods-charith-cobsccomp182p-006/Pods-charith-cobsccomp182p-006.release.xcconfig"; sourceTree = "<group>"; };
-		DBF6E32A547AEF4EC644ECDB /* Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.debug.xcconfig"; path = "Target Support Files/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E004DD9CF30D0139624572AC /* Pods-charith-cobsccomp182p-006Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-charith-cobsccomp182p-006Tests.debug.xcconfig"; path = "Target Support Files/Pods-charith-cobsccomp182p-006Tests/Pods-charith-cobsccomp182p-006Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F24300549BC138B7ECF458F1 /* Pods_charith_cobsccomp182p_006_charith_cobsccomp182p_006UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_charith_cobsccomp182p_006_charith_cobsccomp182p_006UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70041EEF5A6F9F279F15BCFA /* Pods_charith_cobsccomp182p_006Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B71A1CECE3EB32B690D0E1BC /* Pods_charith_cobsccomp182p_006_charith_cobsccomp182p_006UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,10 +186,6 @@
 			children = (
 				B5522FCD3CB90114143F7480 /* Pods-charith-cobsccomp182p-006.debug.xcconfig */,
 				D49B2DB2F4FA1AF1A0F32FE9 /* Pods-charith-cobsccomp182p-006.release.xcconfig */,
-				DBF6E32A547AEF4EC644ECDB /* Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.debug.xcconfig */,
-				016FDB0505DB4FE74AFF164C /* Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.release.xcconfig */,
-				E004DD9CF30D0139624572AC /* Pods-charith-cobsccomp182p-006Tests.debug.xcconfig */,
-				827EF89BEAFADF21F47C1129 /* Pods-charith-cobsccomp182p-006Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -208,8 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				D2C4B09B7C9016204B2BEFA1 /* Pods_charith_cobsccomp182p_006.framework */,
-				F24300549BC138B7ECF458F1 /* Pods_charith_cobsccomp182p_006_charith_cobsccomp182p_006UITests.framework */,
-				CB9DE8C21D471C105AE52918 /* Pods_charith_cobsccomp182p_006Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,7 +210,6 @@
 				2998631B23F3C53E005E1F3E /* Frameworks */,
 				2998631C23F3C53E005E1F3E /* Resources */,
 				C594C2DCF6C9F625B85ACA2E /* [CP] Embed Pods Frameworks */,
-				83BA77F85DDD075AB4DB7539 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,7 +224,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2998634C23F3C540005E1F3E /* Build configuration list for PBXNativeTarget "charith-cobsccomp182p-006Tests" */;
 			buildPhases = (
-				E57239C192091B990595C35D /* [CP] Check Pods Manifest.lock */,
 				2998633123F3C540005E1F3E /* Sources */,
 				2998633223F3C540005E1F3E /* Frameworks */,
 				2998633323F3C540005E1F3E /* Resources */,
@@ -260,12 +242,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2998634F23F3C540005E1F3E /* Build configuration list for PBXNativeTarget "charith-cobsccomp182p-006UITests" */;
 			buildPhases = (
-				A91FA7051F6491B4F727A4C5 /* [CP] Check Pods Manifest.lock */,
 				2998633C23F3C540005E1F3E /* Sources */,
 				2998633D23F3C540005E1F3E /* Frameworks */,
 				2998633E23F3C540005E1F3E /* Resources */,
-				40B320990B4E407254B5F32F /* [CP] Embed Pods Frameworks */,
-				F6FE68DDE98CEBEDE86C89EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -371,62 +350,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		40B320990B4E407254B5F32F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		83BA77F85DDD075AB4DB7539 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-charith-cobsccomp182p-006/Pods-charith-cobsccomp182p-006-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-charith-cobsccomp182p-006/Pods-charith-cobsccomp182p-006-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-charith-cobsccomp182p-006/Pods-charith-cobsccomp182p-006-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A91FA7051F6491B4F727A4C5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C594C2DCF6C9F625B85ACA2E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,45 +365,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-charith-cobsccomp182p-006/Pods-charith-cobsccomp182p-006-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E57239C192091B990595C35D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-charith-cobsccomp182p-006Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6FE68DDE98CEBEDE86C89EB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests/Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -712,7 +596,6 @@
 		};
 		2998634D23F3C540005E1F3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E004DD9CF30D0139624572AC /* Pods-charith-cobsccomp182p-006Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -734,7 +617,6 @@
 		};
 		2998634E23F3C540005E1F3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 827EF89BEAFADF21F47C1129 /* Pods-charith-cobsccomp182p-006Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -756,7 +638,6 @@
 		};
 		2998635023F3C540005E1F3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBF6E32A547AEF4EC644ECDB /* Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -777,7 +658,6 @@
 		};
 		2998635123F3C540005E1F3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 016FDB0505DB4FE74AFF164C /* Pods-charith-cobsccomp182p-006-charith-cobsccomp182p-006UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -10,26 +10,65 @@ import UIKit
 import FirebaseStorage
 import Firebase
 
+
+
+struct cell{
+    
+    var eventtitle : String
+    
+ 
+    
+    var eventdes : String
+}
+
 class TableViewController: UITableViewController {
+    
+    var cellArr = [cell](){
+        
+        didSet{
+            tableView.reloadData()
+        }
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
+        cellData()
         
         
     }
 
     // MARK: - Table view data source
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cells = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+        
+        cells.EventTitle.text = cellArr[indexPath.row].eventtitle
+        cells.EventDesc.text = cellArr[indexPath.row].eventdes
+        
+       // let imges = URL(string: cellArr[indexPath.row].eventimgurl)
+        
+        
+        return cells
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return 350
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return cellArr.count
     }
 
     /*
@@ -86,5 +125,74 @@ class TableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    func cellData(){
+        
+        let db = Firestore.firestore()
+        db.collection("Events").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    
+                    
+                    let EventTitle = document.data()["EventTitle"] as? String
+                
+                    
+                    let EventDesc = document.data()["EventDescription"] as? String
+                    
+                    
+                    let email = document.data()["FirstName"] as! String
+                    
+                  
+                    
+                    let imageurll =  document.data()["EventImageurl"] as? String
+                    
+                    //                    let imageurl = document.data()["EventImageurl"] as? String
+                    
+                    //                    let imageURL = URL(string: imageurl!)!
+                    
+                    
+                    //
+                    //
+                    //
+                    //                    let image = UIImage(data: imageData)
+                    
+                    let events = cell(eventtitle: EventTitle!, eventdes: EventDesc!)
+                    
+                    self.cellArr.append(events)
+                    
+                    self.tableView.reloadData()
+                    
+                    print(events)
+                }
+            }
+            
+            print(self.cellArr) // <-- This prints the content in db correctly
+            
+            //            }
+        }
+        
+        
+    }
+    
+    
+    //
+    //    fileprivate func checkLoggedInUserStatus(){
+    //        if Auth.auth().currentUser == nil{
+    //
+    //            DispatchQueue.main.async {
+    //               self.getAllData()
+    //            }
+    //        }else{
+    //
+    //          getAllData()
+    //        }
+    //
+    //    }
+    
+    
 }
+
+

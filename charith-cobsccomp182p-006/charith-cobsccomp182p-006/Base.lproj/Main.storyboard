@@ -350,7 +350,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="103" id="xbp-t1-Qxm" customClass="TableViewCell" customModule="charith_cobsccomp182p_006" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="103" id="xbp-t1-Qxm" customClass="TableViewCell" customModule="charith_cobsccomp182p_006" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="103"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xbp-t1-Qxm" id="PWM-A8-yuM">
@@ -386,12 +386,18 @@
                                         <constraint firstItem="fQR-wP-oRv" firstAttribute="leading" secondItem="PWM-A8-yuM" secondAttribute="leading" constant="20" id="By8-1c-kXK"/>
                                         <constraint firstItem="fQR-wP-oRv" firstAttribute="top" secondItem="PWM-A8-yuM" secondAttribute="top" constant="11" id="FYv-Jb-12i"/>
                                         <constraint firstItem="kEp-xV-xyA" firstAttribute="top" secondItem="fQR-wP-oRv" secondAttribute="top" id="G1I-Lb-dT5"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kEp-xV-xyA" secondAttribute="trailing" constant="20" symbolic="YES" id="RZF-Vl-R7r"/>
                                         <constraint firstItem="hKg-d4-i94" firstAttribute="leading" secondItem="kEp-xV-xyA" secondAttribute="leading" id="VgB-5b-cvD"/>
                                         <constraint firstItem="kEp-xV-xyA" firstAttribute="leading" secondItem="fQR-wP-oRv" secondAttribute="trailing" constant="8" id="Xqk-3v-IKf"/>
                                         <constraint firstItem="kEp-xV-xyA" firstAttribute="top" secondItem="PWM-A8-yuM" secondAttribute="top" constant="11" id="ZWC-Bc-kRP"/>
                                         <constraint firstItem="hKg-d4-i94" firstAttribute="leading" secondItem="fQR-wP-oRv" secondAttribute="trailing" constant="8" id="l2P-gp-wni"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="EventDesc" destination="hKg-d4-i94" id="FiP-Iz-3a7"/>
+                                    <outlet property="EventImg" destination="fQR-wP-oRv" id="ZrS-t4-0ME"/>
+                                    <outlet property="EventTitle" destination="kEp-xV-xyA" id="swV-ej-aA5"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -414,7 +420,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="MJ8-WA-fOY">
-                                <rect key="frame" x="40" y="84" width="334" height="674"/>
+                                <rect key="frame" x="40" y="84" width="334" height="596"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JWS-E1-Z7N">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="180"/>
@@ -444,14 +450,13 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jgP-xE-30k">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Event Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jgP-xE-30k">
                                         <rect key="frame" x="0.0" y="364" width="334" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="334" id="MnQ-e2-b75"/>
                                             <constraint firstAttribute="height" constant="128" id="hI9-XT-8d6"/>
                                         </constraints>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -469,8 +474,8 @@
                                         <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-cB-3ij">
-                                        <rect key="frame" x="0.0" y="624" width="334" height="50"/>
+                                    <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gOe-cB-3ij">
+                                        <rect key="frame" x="0.0" y="596" width="334" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Uo9-3O-rZU"/>
                                         </constraints>

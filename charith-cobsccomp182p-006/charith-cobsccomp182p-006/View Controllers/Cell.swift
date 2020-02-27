@@ -7,3 +7,20 @@
 //
 
 import Foundation
+import  UIKit
+
+class Cell{
+    
+    var EventImg : UIImage
+    var EventTitle: String
+    var EventDesc: String
+    
+    
+    init(EventImg: UIImage , EventTitle:String , EventDesc:String ) {
+        
+        self.EventImg = EventImg
+        self.EventTitle = EventTitle
+        self.EventDesc = EventDesc
+     
+    }
+}

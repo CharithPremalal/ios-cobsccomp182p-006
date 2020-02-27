@@ -10,7 +10,12 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
+
+
 class AddEventViewController: UIViewController {
+    
+    
+   
 
     @IBOutlet weak var EventImage: UIImageView!
     @IBOutlet weak var EventImgBtn: UIButton!
