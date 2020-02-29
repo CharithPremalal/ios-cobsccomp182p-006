@@ -23,15 +23,27 @@ class AddEventViewController: UIViewController {
     @IBOutlet weak var EventDescTxt: UITextView!
     @IBOutlet weak var SaveEventBtn: UIButton!
     @IBOutlet weak var EmailTxt: UITextField!
+    @IBOutlet weak var errorLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setUpElements()
         checkLoggedInUserStatus()
-        
         getEventOwnerName()
     
         // Do any additional setup after loading the view.
+    }
+    
+    func setUpElements(){
+        
+        errorLbl.alpha = 0
+        
+        Utilities.styleTextField(EventName)
+        Utilities.styleFilledButton(SaveEventBtn)
+        Utilities.styleFilledButton(EventImgBtn)
+
+        
     }
     
     fileprivate func checkLoggedInUserStatus(){

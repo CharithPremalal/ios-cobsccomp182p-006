@@ -15,9 +15,6 @@ import Firebase
 struct cell{
     
     var eventtitle : String
-    
- 
-    
     var eventdes : String
 }
 
@@ -63,7 +60,7 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return 350
+        return 100
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -177,6 +174,13 @@ class TableViewController: UITableViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
+        
+        self.navigationController?.pushViewController(vc!, animated:true)
+        
+    }
     
     //
     //    fileprivate func checkLoggedInUserStatus(){
