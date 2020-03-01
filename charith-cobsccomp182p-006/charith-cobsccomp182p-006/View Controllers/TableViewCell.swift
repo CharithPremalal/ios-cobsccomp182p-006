@@ -15,7 +15,8 @@ class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var EventTitle: UILabel!
     
-    @IBOutlet weak var EventDesc: UITextView!
+    @IBOutlet weak var EventDesc: UILabel!
+    
     
     
     override func awakeFromNib() {

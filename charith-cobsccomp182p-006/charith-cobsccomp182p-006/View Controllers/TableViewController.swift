@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseStorage
 import Firebase
+import Kingfisher
 
 
 
@@ -16,6 +17,8 @@ struct cell{
     
     var eventtitle : String
     var eventdes : String
+    var eventimgurl : String
+    
 }
 
 class TableViewController: UITableViewController {
@@ -46,6 +49,9 @@ class TableViewController: UITableViewController {
         
         cells.EventTitle.text = cellArr[indexPath.row].eventtitle
         cells.EventDesc.text = cellArr[indexPath.row].eventdes
+        
+        let img = URL(string: cellArr[indexPath.row].eventimgurl)
+        cells.EventImg.kf.setImage(with: img)
         
        // let imges = URL(string: cellArr[indexPath.row].eventimgurl)
         
@@ -144,19 +150,11 @@ class TableViewController: UITableViewController {
                     
                   
                     
-                    let imageurll =  document.data()["EventImageurl"] as? String
+                    let imgurl =  document.data()["eventimgurl"] as? String
                     
-                    //                    let imageurl = document.data()["EventImageurl"] as? String
+              
                     
-                    //                    let imageURL = URL(string: imageurl!)!
-                    
-                    
-                    //
-                    //
-                    //
-                    //                    let image = UIImage(data: imageData)
-                    
-                    let events = cell(eventtitle: EventTitle!, eventdes: EventDesc!)
+                    let events = cell(eventtitle: EventTitle!, eventdes: EventDesc!, eventimgurl: imgurl!)
                     
                     self.cellArr.append(events)
                     
@@ -176,9 +174,13 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
+        let Home = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
         
-        self.navigationController?.pushViewController(vc!, animated:true)
+        Home?.Ename = cellArr[indexPath.row].eventtitle
+        Home?.Edescription = cellArr[indexPath.row].eventdes
+        Home?.Eimgurl = cellArr[indexPath.row].eventimgurl
+        
+        self.navigationController?.pushViewController(Home!, animated:true)
         
     }
     

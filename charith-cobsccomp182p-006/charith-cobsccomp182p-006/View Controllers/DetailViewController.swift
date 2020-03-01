@@ -12,13 +12,25 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var EventLbl: UILabel!
-    @IBOutlet weak var EventDesc: UITextView!
+    @IBOutlet weak var EventDesc: UILabel!
     @IBOutlet weak var GoingBtn: UIButton!
+    
+    
+    var Ename = ""
+    var Edescription = ""
+    var Eimgurl = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        EventLbl.text = "\(Ename)"
+        EventDesc.text = "\(Edescription)"
+        let imgurls = URL(string: "\(Eimgurl)")
+        img.kf.setImage(with: imgurls)
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     

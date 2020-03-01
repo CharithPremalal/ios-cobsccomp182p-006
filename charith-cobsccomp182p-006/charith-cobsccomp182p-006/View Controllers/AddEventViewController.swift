@@ -9,13 +9,15 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import FirebaseStorage
 
 
 
-class AddEventViewController: UIViewController {
+class AddEventViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
    
+    var eventimage: UIImage? = nil
 
     @IBOutlet weak var EventImage: UIImageView!
     @IBOutlet weak var EventImgBtn: UIButton!
@@ -71,7 +73,7 @@ class AddEventViewController: UIViewController {
     
     func EventDetails(){
         
-        /*//  guard let imageSelected = self.image else{
+        guard let imageSelected = self.eventimage else{
             
             print("profile image nil")
             return
@@ -81,7 +83,7 @@ class AddEventViewController: UIViewController {
             
             return
         }
-       */
+       
         
         let EventTitle = EventName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -95,38 +97,24 @@ class AddEventViewController: UIViewController {
         
        // let ownerId =  ownersId.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
-       //  let metadata = StorageMetadata()
+         let metadata = StorageMetadata()
         
         let database  = Firestore.firestore()
-       // metadata.contentType = "image/jpg"
-       // let storageRef = Storage.storage().reference(forURL: "gs://event-app-93d34.appspot.com")
+        metadata.contentType = "image/jpg"
+        let storageRef = Storage.storage().reference(forURL: "gs://charith-cobsccomp182p-006.appspot.com")
         
         guard let uid = Auth.auth().currentUser?.uid else{ return }
         
-    database.collection("Events").document().setData(["EventTitle":EventTitle, "EventDescription": EventDescription, "FirstName": FirstName]) { (error) in
-            
-            
-            if error != nil {
-                
-                print("error")
-              //  self.showErrorMessage("Error when creating Event")
-            }else{
-                
-                print("done")
-                
-               // self.redirectToHomeController()
-            }
-        
-        }
+    
         
         //        let docRef = database.collection("users").document()
         
-       // let storageProfileRef = storageRef.child("Events")
+        let storageProfileRef = storageRef.child("Events")
         
         
         
         
-      /*  storageProfileRef.putData(imageData, metadata: metadata) { (StorageMetaData, error) in
+        storageProfileRef.putData(imageData, metadata: metadata) { (StorageMetaData, error) in
             
             if error != nil
             {
@@ -138,12 +126,27 @@ class AddEventViewController: UIViewController {
                 
                 if let metaImageUrl = url?.absoluteString{
                     
-                    print(metaImageUrl)
+                    database.collection("Events").document().setData(["EventTitle":EventTitle, "EventDescription": EventDescription, "FirstName": FirstName, "eventimgurl": metaImageUrl]) { (error) in
+                        
+                        
+                        if error != nil {
+                            
+                            print("error")
+                            //  self.showErrorMessage("Error when creating Event")
+                        }else{
+                            
+                            print("done")
+                            
+                            let Home = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeVC")
+                            self.present(Home, animated: true, completion: nil)
+                        }
+                        
+                    }
                 }
                 
             })
          
-        }*/
+        }
         
         
         
@@ -177,4 +180,69 @@ class AddEventViewController: UIViewController {
         }
         
     }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        //        let imageSelected = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        //
+        //
+        //        image = imageSelected
+        //        eventImageView.image = imageSelected
+        //        picker.dismiss(animated: true, completion: nil)
+        
+        
+        
+        if let imageSelected = info[UIImagePickerController.InfoKey.editedImage] as? UIImage{
+            
+            eventimage = imageSelected
+            EventImage.image = imageSelected
+        }
+        
+        if let imageOriginal = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            
+            eventimage = imageOriginal
+            EventImage.image = imageOriginal
+        }
+        //
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func eventImage(){
+        
+        
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        
+        let actionSheet = UIAlertController(title: "photo Source", message: "Choose a image", preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (action:UIAlertAction) in
+            
+            if UIImagePickerController.isSourceTypeAvailable(.camera){
+                self.present(imagePickerController, animated: true , completion: nil)
+            }else{
+                
+                //                return "Camere is Not Available"
+                
+                print("Camera Not Availabale")
+            }
+            
+            imagePickerController.sourceType = .camera
+            self.present(imagePickerController, animated: true, completion: nil)
+            
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in
+            imagePickerController.sourceType = .photoLibrary
+            self.present(imagePickerController, animated: true, completion: nil)
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Cansel", style: .cancel, handler: nil))
+        
+        self.present(actionSheet, animated: true , completion: nil)
+    }
+    
+    @IBAction func AddImgTapped(_ sender: Any) {
+        eventImage()
+    }
+    
+    
+    
 }

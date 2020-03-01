@@ -30,7 +30,7 @@ class ResetViewController: UIViewController {
     }
     
     @IBAction func resetPasswordTapped(_ sender: Any) {
-       
+      
         
     }
     
