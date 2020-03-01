@@ -722,6 +722,13 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="q2N-Zm-r37"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="Email" destination="8af-5a-oYf" id="CWk-a1-0Sy"/>
+                        <outlet property="FirstName" destination="aid-ca-nMd" id="XhA-0G-VMT"/>
+                        <outlet property="LastName" destination="976-R4-VF2" id="GOH-VC-ahZ"/>
+                        <outlet property="Phone" destination="NMm-mW-kIS" id="cCJ-Hg-uZk"/>
+                        <outlet property="profileImg" destination="hmC-6x-dff" id="uOb-vF-GfM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tml-HM-mfL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
