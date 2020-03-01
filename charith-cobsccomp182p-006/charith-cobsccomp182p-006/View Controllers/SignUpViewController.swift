@@ -9,9 +9,9 @@
 import UIKit
 import FirebaseAuth
 import Firebase
-import  FirebaseStorage
+import FirebaseStorage
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
 
     
     @IBOutlet weak var profileImg: UIImageView!
@@ -28,10 +28,24 @@ class SignUpViewController: UIViewController {
     var imagePicker:UIImagePickerController!
     var profileimg: UIImage? = nil
     
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
+        
+        let allowedCharacters = "+1234567890"
+        let allowedCharacterSet = CharacterSet(charactersIn: allowedCharacters)
+        let typedCharacterSet = CharacterSet(charactersIn: string)
+        
+        return allowedCharacterSet.isSuperset(of: typedCharacterSet)
+    }
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        phoneNumber.delegate = self
+
         setUpElements()
         profile()
 

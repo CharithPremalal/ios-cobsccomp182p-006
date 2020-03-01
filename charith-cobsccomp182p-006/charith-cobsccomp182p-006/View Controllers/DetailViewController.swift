@@ -20,18 +20,21 @@ class DetailViewController: UIViewController {
     var Edescription = ""
     var Eimgurl = ""
     
-    
+    func setUpElements(){
+        
+        Utilities.styleFilledButton(GoingBtn)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setUpElements()
         EventLbl.text = "\(Ename)"
         EventDesc.text = "\(Edescription)"
         let imgurls = URL(string: "\(Eimgurl)")
         img.kf.setImage(with: imgurls)
         
         
-        
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func GoingTapped(_ sender: Any) {

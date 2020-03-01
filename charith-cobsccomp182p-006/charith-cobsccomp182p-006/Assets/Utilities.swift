@@ -16,9 +16,9 @@ class Utilities {
         // Create the bottom line
         let bottomLine = CALayer()
         
-        bottomLine.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: textfield.frame.width, height: 2)
+        bottomLine.frame = CGRect(x: 0, y: textfield.frame.height - 2, width: textfield.frame.width , height: 2)
         bottomLine.backgroundColor = UIColor.init(red: 52/255, green: 152/255, blue: 219/255, alpha: 1).cgColor
- 
+ //textfield.frame.width
         textfield.borderStyle = .none
         textfield.layer.addSublayer(bottomLine)
         textfield.textColor = UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1)
@@ -47,5 +47,7 @@ class Utilities {
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
         return passwordTest.evaluate(with: password)
     }
+    
+    
     
 }

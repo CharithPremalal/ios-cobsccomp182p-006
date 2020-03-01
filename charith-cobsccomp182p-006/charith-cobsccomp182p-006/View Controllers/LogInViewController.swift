@@ -45,6 +45,7 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction func loginTapped(_ sender: Any) {
+        
         //Validation
         let error = validateFields()
         
@@ -72,6 +73,8 @@ class LogInViewController: UIViewController {
                 }
             }
         }
+        
+        
     }
     
     func showError(_ message:String){

@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import LocalAuthentication
 
 class ProfileViewController: UIViewController {
 
@@ -16,24 +17,36 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         checkLoggedInUserStatus()
-        
         // Do any additional setup after loading the view.
     }
+    
+    func BioLogin(){
+        let context:LAContext = LAContext()
+        
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil){
+            context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Message") { (good, errpr) in
+            if good {
+                print("good")
+            }else{
+                print("Try Again")
+                }
+            }
+        }
+    }
+    
     
     fileprivate func checkLoggedInUserStatus(){
         if Auth.auth().currentUser == nil{
             
+
             DispatchQueue.main.async {
                 let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Login")
                 self.present(vc, animated: true, completion: nil)
-                
                 return
             }
         }else{
-            
-          print("user Logged")
+            BioLogin()
         }
-        
     }
     
     
