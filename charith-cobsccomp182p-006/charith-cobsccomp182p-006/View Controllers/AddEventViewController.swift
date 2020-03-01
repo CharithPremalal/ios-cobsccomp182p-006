@@ -86,14 +86,9 @@ class AddEventViewController: UIViewController, UIImagePickerControllerDelegate,
        
         
         let EventTitle = EventName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-       // let eventDate = eventDateTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        let EventDescription = EventDescTxt.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
+        let EventDesc = EventDescTxt.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let FirstName = EmailTxt.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let metadata = StorageMetadata()
-        
         let database  = Firestore.firestore()
         metadata.contentType = "image/jpg"
         let storageRef = Storage.storage().reference(forURL: "gs://charith-cobsccomp182p-006.appspot.com")
@@ -112,7 +107,7 @@ class AddEventViewController: UIViewController, UIImagePickerControllerDelegate,
                 
                 if let metaImageUrl = url?.absoluteString{
                     
-                    database.collection("Events").document().setData(["EventTitle":EventTitle, "EventDescription": EventDescription, "FirstName": FirstName, "eventimgurl": metaImageUrl]) { (error) in
+                    database.collection("Events").document().setData(["EventTitle":EventTitle, "EventDescription": EventDesc, "FirstName": FirstName, "eventimgurl": metaImageUrl]) { (error) in
                         
                         if error != nil {
                             

@@ -381,7 +381,7 @@
                                             <constraint firstAttribute="height" constant="120" id="arg-Wi-uvH"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghn-q6-EXS">
@@ -436,10 +436,14 @@
         <scene sceneID="pB7-QB-NJt">
             <objects>
                 <tableViewController id="IHE-58-plf" customClass="TableViewController" customModule="charith_cobsccomp182p_006" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="G11-El-AUJ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="G11-El-AUJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" red="0.1058823529" green="0.14901960780000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="100" id="xbp-t1-Qxm" customClass="TableViewCell" customModule="charith_cobsccomp182p_006" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
@@ -458,7 +462,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEp-xV-xyA">
                                             <rect key="frame" x="148" y="11" width="86.5" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRz-R5-ykR">
@@ -468,10 +472,11 @@
                                                 <constraint firstAttribute="width" constant="255" id="sD4-Pe-271"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.1058823529" green="0.14901960780000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="fQR-wP-oRv" firstAttribute="leading" secondItem="PWM-A8-yuM" secondAttribute="leading" constant="20" id="By8-1c-kXK"/>
                                         <constraint firstItem="fQR-wP-oRv" firstAttribute="top" secondItem="PWM-A8-yuM" secondAttribute="top" constant="11" id="FYv-Jb-12i"/>
@@ -642,7 +647,7 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="GWh-Vl-3P9">
-                                <rect key="frame" x="40" y="130" width="334" height="354"/>
+                                <rect key="frame" x="40" y="130" width="334" height="296"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addimage" translatesAutoresizingMaskIntoConstraints="NO" id="hmC-6x-dff">
@@ -675,17 +680,8 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8af-5a-oYf">
-                                        <rect key="frame" x="0.0" y="266" width="334" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="E9U-F0-HhH"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NMm-mW-kIS">
-                                        <rect key="frame" x="0.0" y="324" width="334" height="30"/>
+                                        <rect key="frame" x="0.0" y="266" width="334" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Ne6-F0-nNp"/>
                                         </constraints>
@@ -694,7 +690,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCS-YP-1Dc">
-                                        <rect key="frame" x="0.0" y="354" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="296" width="334" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="qGJ-lk-cn1"/>
                                         </constraints>
@@ -723,7 +719,6 @@
                     <navigationItem key="navigationItem" id="q2N-Zm-r37"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="Email" destination="8af-5a-oYf" id="CWk-a1-0Sy"/>
                         <outlet property="FirstName" destination="aid-ca-nMd" id="XhA-0G-VMT"/>
                         <outlet property="LastName" destination="976-R4-VF2" id="GOH-VC-ahZ"/>
                         <outlet property="Phone" destination="NMm-mW-kIS" id="cCJ-Hg-uZk"/>
@@ -783,11 +778,12 @@
         <scene sceneID="5Uo-Dk-GMq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A5L-gL-KfD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="pIy-k9-1wU"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="home" id="pIy-k9-1wU"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JxD-6D-28H">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="blackTranslucent" id="JxD-6D-28H">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -802,6 +798,7 @@
     <resources>
         <image name="addimage" width="341" height="341"/>
         <image name="avatar-png-icon-1" width="170.5" height="170.5"/>
+        <image name="home" width="30" height="30"/>
         <image name="new tweet" width="30" height="30"/>
         <image name="profile" width="24" height="24"/>
         <image name="suits_wallpaper" width="1280" height="720"/>
