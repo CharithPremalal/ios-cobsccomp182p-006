@@ -350,7 +350,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="7CO-Ro-ukx">
-                                <rect key="frame" x="40" y="84" width="334" height="436.5"/>
+                                <rect key="frame" x="40" y="84" width="334" height="358.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cPk-xV-d2W">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="180"/>
@@ -383,16 +383,8 @@
                                             <action selector="signUpTapped:" destination="SGz-Ma-39D" eventType="touchUpInside" id="zqO-gF-ce8"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6a-8C-siq">
-                                        <rect key="frame" x="0.0" y="386.5" width="334" height="50"/>
-                                        <state key="normal" title="Back"/>
-                                        <connections>
-                                            <action selector="EventSave:" destination="00m-U4-10b" eventType="touchUpInside" id="Mwo-Cf-Tpd"/>
-                                            <action selector="signUpTapped:" destination="SGz-Ma-39D" eventType="touchUpInside" id="ncD-7w-lyI"/>
-                                        </connections>
-                                    </button>
                                     <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hoA-Wn-WER">
-                                        <rect key="frame" x="0.0" y="436.5" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="358.5" width="334" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="eXS-e7-EWF"/>
                                         </constraints>
@@ -406,9 +398,6 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="n6a-8C-siq" firstAttribute="height" secondItem="Ghn-q6-EXS" secondAttribute="height" id="J2V-wG-qRS"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.1058823529" green="0.14901960780000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -505,7 +494,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="MJ8-WA-fOY">
                                 <rect key="frame" x="40" y="84" width="334" height="616"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JWS-E1-Z7N">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addimage" translatesAutoresizingMaskIntoConstraints="NO" id="JWS-E1-Z7N">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="180" id="VFw-a4-R04"/>
@@ -717,6 +706,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addimage" width="341" height="341"/>
         <image name="avatar-png-icon-1" width="170.5" height="170.5"/>
         <image name="new tweet" width="30" height="30"/>
         <image name="profile" width="24" height="24"/>
