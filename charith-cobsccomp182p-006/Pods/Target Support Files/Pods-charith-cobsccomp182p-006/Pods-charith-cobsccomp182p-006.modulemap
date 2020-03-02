@@ -1,0 +1,6 @@
+framework module Pods_charith_cobsccomp182p_006 {
+  umbrella header "Pods-charith-cobsccomp182p-006-umbrella.h"
+
+  export *
+  module * { export * }
+}
