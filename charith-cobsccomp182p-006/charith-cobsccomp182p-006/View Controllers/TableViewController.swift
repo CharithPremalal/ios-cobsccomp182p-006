@@ -11,8 +11,6 @@ import FirebaseStorage
 import Firebase
 import Kingfisher
 
-
-
 struct cell{
     
     var eventtitle : String
@@ -30,7 +28,6 @@ class TableViewController: UITableViewController {
         }
         
     }
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()

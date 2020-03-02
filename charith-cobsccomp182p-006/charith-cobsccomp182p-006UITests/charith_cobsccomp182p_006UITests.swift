@@ -30,5 +30,47 @@ class charith_cobsccomp182p_006UITests: XCTestCase {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
+    
+    func testUserAuthentication(){
+        
+        
+        let app = XCUIApplication()
+        app.tabBars.buttons["Profile"].tap()
+        app.buttons["Log In"].tap()
+
+        
+        _ = XCUIApplication()
+        let firstNameTextField = app.textFields["First Name"]
+        firstNameTextField.tap()
+        firstNameTextField.tap()
+        
+        let signUpButton = app.buttons["Sign Up"]
+        signUpButton.tap()
+        app.textFields["Last Name"].tap()
+        
+        let emailTextField = app.textFields["Email"]
+        emailTextField.tap()
+        emailTextField.tap()
+        
+        let phoneNumberTextField = app.textFields["Phone Number"]
+        phoneNumberTextField.tap()
+        phoneNumberTextField.tap()
+        
+        let passwordSecureTextField = app.secureTextFields["Password"]
+        passwordSecureTextField.tap()
+        passwordSecureTextField.tap()
+        
+        let confirmPasswordSecureTextField = app.secureTextFields["Confirm Password"]
+        confirmPasswordSecureTextField.tap()
+        confirmPasswordSecureTextField.tap()
+        signUpButton.tap()
+        passwordSecureTextField.tap()
+        passwordSecureTextField.tap()
+        passwordSecureTextField.tap()
+        confirmPasswordSecureTextField.tap()
+        confirmPasswordSecureTextField.tap()
+        signUpButton.tap()        
+
+    }
 
 }
